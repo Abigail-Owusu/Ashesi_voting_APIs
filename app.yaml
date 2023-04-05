@@ -1,0 +1,6 @@
+runtime: python39
+service: voting
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: "voting-database-d7727-firebase-adminsdk-dhfny-8ee754af5b.json"
